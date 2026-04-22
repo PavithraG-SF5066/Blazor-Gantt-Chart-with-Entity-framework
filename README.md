@@ -20,8 +20,8 @@ Ensure the following software and packages are installed before proceeding:
 
 | Software/Package | Version | Purpose |
 |-----------------|---------|---------|
-| Visual Studio 2026 | 18.2.1 or later | Development IDE with Blazor workload |
-| .NET SDK | net10.0 or compatible | Runtime and build tools |
+| Visual Studio 2022 | 18.2.1 or later | Development IDE with Blazor workload |
+| .NET SDK | net8.0 or compatible | Runtime and build tools |
 | SQL Server | 2021 or later | Database server |
 | Syncfusion.Blazor.Gantt | -v {{site.blazorversion}} | Gantt Chart and UI components |
 | Syncfusion.Blazor.Themes | -v {{site.blazorversion}} | Styling for Gantt Chart components |
@@ -30,9 +30,10 @@ Ensure the following software and packages are installed before proceeding:
 
 ## How to run the project
 
-1. Clone or checkout this project to a local folder on your disk.
-2. Open the solution file with Visual Studio 2026.
+1. Clone or download this repository to your local system.
+2. Open the project file (.csproj) in Visual Studio 2022 or later.
 3. Rebuild the solution to restore NuGet packages.
 4. Update the database connection string in the project's configuration (for example, `appsettings.json` or the DbContext configuration) to point to your SQL Server instance.
 5. Ensure the database is available and migrations (if any) are applied.
-6. Run the project and open the Gantt page. Test create, update and delete operations — changes are sent to the server via the CustomAdaptor and persisted by Entity Framework.
+6. Run the project and open the Gantt page. 
+7. Test create, update and delete operations — changes are sent to the server via the CustomAdaptor and persisted by Entity Framework.
