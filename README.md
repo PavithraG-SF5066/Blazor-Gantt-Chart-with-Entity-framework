@@ -23,8 +23,8 @@ Ensure the following software and packages are installed before proceeding:
 | Visual Studio 2022 | 18.2.1 or later | Development IDE with Blazor workload |
 | .NET SDK | net8.0 or compatible | Runtime and build tools |
 | SQL Server | 2021 or later | Database server |
-| Syncfusion.Blazor.Gantt | -v 33.1.44 | Gantt Chart and UI components |
-| Syncfusion.Blazor.Themes | -v 33.1.44 | Styling for Gantt Chart components |
+| Syncfusion.Blazor.Gantt | -v {{site.blazorversion}} | Gantt Chart and UI components |
+| Syncfusion.Blazor.Themes | -v {{site.blazorversion}} | Styling for Gantt Chart components |
 | Microsoft.EntityFrameworkCore | 10.0.2 | Core framework for database operations |
 | Microsoft.EntityFrameworkCore.SqlServer | 10.0.2 | SQL Server provider for Entity Framework Core |
 
