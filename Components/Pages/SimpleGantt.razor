@@ -1,4 +1,5 @@
-﻿@page "/fetchdata"
+﻿@page "/Gantt"
+@rendermode InteractiveServer
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="700px" Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })">
     <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
@@ -10,7 +11,7 @@
     private List<TaskData> TaskCollection { get; set; }
     protected override void OnInitialized()
     {
-        //this.TaskCollection = GetTaskCollection();
+        this.TaskCollection = GetTaskCollection();
     }
 
     public class TaskData
